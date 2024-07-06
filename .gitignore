@@ -8,5 +8,5 @@ __pycache__/
 
 #django stuff
 db.sqlite3
-dump.rbd
+dump.rdb
 celerybeat-schedule.db
