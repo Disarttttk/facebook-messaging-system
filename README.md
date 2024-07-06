@@ -83,10 +83,10 @@ Facebook Messaging System — это платформа для отправки 
 
 ### Используйте функцию для загрузки аккаунтов:
 
-    ```python
-    from utils import load_accounts_from_file
-    load_accounts_from_file('path/to/accounts.csv')
-    ```
+```python
+from utils import load_accounts_from_file
+load_accounts_from_file('path/to/accounts.csv')
+```
 
 ### Загрузка контактов
 
@@ -94,10 +94,10 @@ Facebook Messaging System — это платформа для отправки 
 
 ### Используйте функцию для загрузки контактов:
 
-    ```python
-    from utils import load_contacts_from_file
-    load_contacts_from_file('path/to/contacts.csv')
-    ```
+```python
+from utils import load_contacts_from_file
+load_contacts_from_file('path/to/contacts.csv')
+```
 
 ### Планирование отправки сообщений
 
@@ -105,13 +105,12 @@ Facebook Messaging System — это платформа для отправки 
 
 ### Пример конфигурации:
 
-    ```python
-
-    CELERY_BEAT_SCHEDULE = {
-        'send-messages-every-minute': {
-            'task': 'mailer.tasks.send_messages',
-            'schedule': crontab(minute='*/1'),  # отправка сообщений каждую минуту
-        },
-    }
-    ```
+```python
+CELERY_BEAT_SCHEDULE = {
+    'send-messages-every-minute': {
+    'task': 'mailer.tasks.send_messages',
+    'schedule': crontab(minute='*/1'),  # отправка сообщений каждую минуту
+    },
+}
+```
 
